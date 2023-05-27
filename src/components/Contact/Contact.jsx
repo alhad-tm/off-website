@@ -61,7 +61,8 @@ const Contact = () => {
         </div>
         <div className={css.cthree}>
           <img src={Mail} alt="" />
-          <span>contact@invicious.in</span>
+         
+          <a href="mailto: contact@invicious.in"> <span >contact@invicious.in</span> </a>  
         </div>   
         </div>
         <div className={css.socialicons}>

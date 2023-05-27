@@ -34,6 +34,15 @@ a:link{
   text-decoration: none;
   color: aliceblue !important;
 }
+a:hover{
+  color:#666666 !important;
+}
+a:link:hover{
+  color:#666666 !important;
+}
+/* a:active{
+  background-color: yellow !important;
+} */
 
 
 /* .popup-content{

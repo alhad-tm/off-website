@@ -164,7 +164,7 @@ const Career = () => {
         {/* here */}
 
         <div className={css.m3}>
-          <span>
+          <span style={{color:"#666666"}}>
             No suitable job opening found? Don't worry! We're always looking for
             passionate and talented individuals to join our team. Send us your
             resume and tell us why you'd be a great fit. Let's build a better

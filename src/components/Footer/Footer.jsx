@@ -98,8 +98,7 @@ const Footer = () => {
             <br />
             <div className={css.foot}>
               <img src={Mail} alt="" />
-        <a href="mailto: contact@invicious.in"> <span >contact@invicious.in</span>
-               </a>      
+        <a href="mailto: contact@invicious.in"> <span >contact@invicious.in</span> </a>      
             </div>
           </div>
         </div>

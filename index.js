@@ -15,7 +15,9 @@ const dbConfig = {
 
 app.use(bodyParser.json());
 
-app.post('/register', async (req, res) => {
+const endpoints = ['/', '/tributorE', '/tributorCM'];
+
+app.post(endpoints, async (req, res) => {
   try {
     const connection = await mysql.createConnection(dbConfig);
 
@@ -122,6 +124,16 @@ app.post('/register', async (req, res) => {
     });
   }
 });
+
+
+app.get('/', (req, res) => {
+  res.redirect('/Main');
+});
+
+app.get('*', (req, res) => {
+  res.status(404).send('Not Found');
+});
+
 
 app.listen(port, () => {
   console.log(`Server running on http://${domain}:${port}`);

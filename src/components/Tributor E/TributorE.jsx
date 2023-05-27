@@ -83,10 +83,10 @@ const TributorE = () => {
 						<div className={css.modal}>
 							<ContactForm/>
 							<div>
-								{/* <button onClick=
+								<button onClick=
 									{() => close()}>
 					 x
-								</button> */}
+								</button>
 							</div>
 						</div>
 					)

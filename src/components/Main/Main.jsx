@@ -1,6 +1,6 @@
 import React from "react";
 import { Link  as Linkscroll} from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import css from "./Main.module.css";
 import Arrow from "../../assets/Icon & Logo/arrowwhite.png";
 import Prd1 from "../../assets/product 11.png";
@@ -12,6 +12,8 @@ import ContactForm from "../ContactForm/ContactForm";
 
 const Main = () => {
   return (
+  //   <Router>
+  // <Route exact path="/" component={Main} />
     <div className={css.container}>
       <div className={css.top}>
         <div className={css.first}>
@@ -185,6 +187,8 @@ const Main = () => {
         </div>
       </div>
     </div>
+// </Router>
+
   );
 };
 

@@ -2,25 +2,30 @@ import React, { useState } from 'react';
 import css from './ContactForm.module.css';
 import axios from 'axios';
 
+const endpoints=['/','/tributorE','/tributorCM'];
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+
 const ContactForm = () => {
+  // const notify = () => toast.success("Sent Successfully");
   const [name, setName] = useState('');
   const [organisationType, setOrganisationType] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e, endpoints) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://invicious.in:5000/register', {
+      const response = await axios.post(`https://invicious.in/${endpoints}`, {
         Name: name,
         'Type of organization': organisationType,
         email,
         'phone number': phoneNumber,
-      });
+      }).then((response)=>{setName(response.data)}); 
 
-      if (response.status === 201) {
+      if (response.status === 200) {
         console.log('Form submitted successfully');
         setName('');
         setOrganisationType('');
@@ -28,13 +33,14 @@ const ContactForm = () => {
         setPhoneNumber('');
         setErrorMessage('');
       }
+      // else("hello")
     } catch (error) {
-      console.error('An error occurred:', error);
+      console.error('An error occurred: 1', error);
       if (error.response && error.response.data && error.response.data.message) {
         const errorMessage = error.response.data.message;
         setErrorMessage(errorMessage);
       } else {
-        let errorMessage = 'An error occurred';
+        let errorMessage = 'An error occurred 2';
 
         if (error.message === 'Email or phone number already exists') {
           errorMessage = 'Email or phone number already exists';
@@ -65,7 +71,7 @@ const ContactForm = () => {
     <div className={css.formcontain}>
       <h1 className={css.hone}>Register</h1>
       {errorMessage && <p>{errorMessage}</p>}
-      <form className={css.contactForm} onSubmit={handleSubmit}>
+      <form className={css.contactForm} onSubmit={(e) => handleSubmit(e, endpoints)}>
 
         <label htmlFor="name">Name</label>
         <input className={css.inputcontact}
@@ -111,9 +117,12 @@ const ContactForm = () => {
           required
         />
 
-        <button type="submit" className={css.sendButton}>
-          Send
+        <button  type="submit" className={css.sendButton}>
+          Submit
         </button>
+        
+        {/* <ToastContainer autoClose={600} position={"bottom-right"} /> */}
+
       </form>
     </div>
   );
