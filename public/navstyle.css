@@ -22,9 +22,10 @@ nav{
 }
 nav .navbar{
   height: 100%;
-  max-width: 1250px;
+  /* max-width: 1250px; */
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   margin: auto;
