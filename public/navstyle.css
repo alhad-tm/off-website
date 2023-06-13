@@ -199,6 +199,10 @@ nav .navbar .links li:hover .js-sub-menu{
   }
 }
 @media (max-width:800px){
+  .logim{
+    height: 40px;
+    width: 40px;
+  }
   nav{
     /* position: relative; */
   }
@@ -302,4 +306,8 @@ nav .navbar .links li .sub-menu li{
   nav .navbar .nav-links{
   max-width: 100%;
 } 
+.logim{
+  height: 40px;
+  width: 40px;
+}
 }

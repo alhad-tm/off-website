@@ -7,10 +7,13 @@ import Prd1 from "../../assets/product 11.png";
 import Prd2 from "../../assets/product 22.png";
 import Prd3 from "../../assets/product 33.png";
 import Poster from "../../assets/Posternew.png";
+import MobPoster from "../../assets/mobposter.png";
 import Popup from 'reactjs-popup';
 import ContactForm from "../ContactForm/ContactForm";
+import Log from "../../assets/mainlogo1.svg";
 
 const Main = () => {
+  const mobile=window.innerWidth<=768
   return (
   //   <Router>
   // <Route exact path="/" component={Main} />
@@ -22,7 +25,8 @@ const Main = () => {
         </div>
         <div className={css.second}>
           {" "}
-          <b>"Invicious"</b>
+          {/* <b>"Invicious"</b> */}
+          <img className={css.log} src={Log} alt="" />
         </div>
         <div className={css.third}>
           Invicious is committed to creating innovative solutions that redefine
@@ -44,10 +48,10 @@ const Main = () => {
             alt=""
           />   </Linkscroll>
         </div>
-      </div>
+      </div> 
 
       <div className={css.middle} id="middleposter"> 
-        <img className={css.poster} src={Poster} alt="" />
+     {mobile?   <img className={css.poster} src={MobPoster} alt="" /> : <img className={css.poster} src={Poster} alt="" />}
       </div>
 
       <div className="bottom">

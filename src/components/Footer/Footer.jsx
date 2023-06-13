@@ -8,10 +8,13 @@ import Mail from "../../assets/Icon & Logo/Frame.svg";
 import Twitter from "../../assets/Icon & Logo/Twitter.svg";
 import Lk from "../../assets/Icon & Logo/linkedin2.svg";
 import Insta from "../../assets/Icon & Logo/instagram logo.svg";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import {Link as LinkRoll } from "react-scroll";
+import Backto from "../../assets/backtotop.svg";
+
 
 const Footer = () => {
+ 
   return (
     <div className={css.maincontainer} >
       <div className={css.container} >
@@ -37,18 +40,18 @@ const Footer = () => {
             <div className={css.fdtwo}>
               <h3 style={{ color: "white" }}>Products</h3>
               <div className={css.fdspan}>
-                <Link to="/tributorE">
+                <NavLink to="/tributorE">
                   {" "}
                   <span className={css.tc} onClick={() => window.scrollTo(0, 0)}>Tributor for Cinema</span>
-                </Link>
-                <Link to="/tributorCM">
+                </NavLink>
+                <NavLink to="/tributorCM">
                   {" "}
                   <span onClick={() => window.scrollTo(0, 0)}>Tributor for Media</span>
-                </Link>
-                <Link to="/prekets">
+                </NavLink>
+                <NavLink to="/prekets">
                   {" "}
                   <span onClick={() => window.scrollTo(0, 0)}>Prekets.com</span>
-                </Link> 
+                </NavLink> 
               </div>
             </div>
 
@@ -57,25 +60,25 @@ const Footer = () => {
               <div className={css.fdspan}>
 
               
-              <Link to="/about">
+              <NavLink to="/about">
                   {" "}
                   <span  onClick={() => window.scrollTo(0, 0)}>Organisation Team</span>{" "}
-                </Link>{" "}
+                </NavLink>{" "}
              
 
 
                  {/* <span> Orginasation Team </span>   */}
                 <span>Our partners</span>
 
-                <Link to="/cookie">  <span onClick={() => window.scrollTo(0, 0)}>Cookies Policy</span>
-                </Link>{" "}
+                <NavLink to="/cookie">  <span onClick={() => window.scrollTo(0, 0)}>Cookies Policy</span>
+                </NavLink>{" "}
                
 
 
-                <Link to="/career">
+                <NavLink to="/career">
                   {" "}
                   <span onClick={() => window.scrollTo(0, 0)}  >Career</span>{" "}
-                </Link>{" "}
+                </NavLink>{" "}
               </div>
             </div>
           {/* </div> */}
@@ -101,6 +104,9 @@ const Footer = () => {
         <a href="mailto: contact@invicious.in"> <span >contact@invicious.in</span> </a>      
             </div>
           </div>
+      
+         
+         
         </div>
       </div>
 
@@ -108,28 +114,28 @@ const Footer = () => {
 
       <div className={css.footerlist}>
         <div className={css.flistleft}>
-          <Link to="/">
+          <NavLink to="/">
             {" "}
             <li onClick={() => window.scrollTo(0, 0)}>Home</li>
-          </Link>
+          </NavLink>
 
-          <Link to="/about">
+          <NavLink to="/about" >
             {" "}
             <li onClick={() => window.scrollTo(0, 0)}>About</li>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink to="/contact">
             {" "}
             <li onClick={() => window.scrollTo(0, 0)}>Contact</li>
-          </Link>
+          </NavLink>
           
-          <Link to="/privacy">
+          <NavLink to="/privacy">
             {" "}
             <li onClick={() => window.scrollTo(0, 0)}>Privacy Policy</li>
-          </Link>
-          <Link to="/terms">
+          </NavLink>
+          <NavLink to="/terms">
             {" "}
             <li onClick={() => window.scrollTo(0, 0)}>Terms & Conditions</li>
-          </Link>
+          </NavLink>
         </div>
 
         <div className={css.flistright}>

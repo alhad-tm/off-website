@@ -17,6 +17,8 @@ import Careersub from "./components/Careersub/Careersub";
 import Terms from "./components/Terms/Terms";
 import Privacy from "./components/Privacy/Privacy";
 import Cookie from "./components/Cookie/Cookie";
+import ContactForm from "./components/ContactForm/ContactForm";
+
 // import Nav from "./components/Nav/Nav";
 // import { Container, Nav, Navbar, Row, Col, NavDropdown } from 'react-bootstrap';
 
@@ -29,17 +31,12 @@ import Cookie from "./components/Cookie/Cookie";
 function App() {
   return (
     <div className="App">
+    
       <Router>
-      
+       
 
-        {/* <Header /> */}
-        {/* <Nav/> */}
-
-
-
-        {/* <PopupGfg/> */}
         <Routes>
-          <Route path="/" exact element={<Main />} />
+          <Route path="/" exact element={<Main/>} />
           <Route path="/about" element={<About />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/contact" element={<Contact />} />
@@ -54,8 +51,9 @@ function App() {
           <Route path="/cookie" element={<Cookie/>}/>   
         </Routes>
 
-        <Footer />
+        <Footer />  
       </Router>
+
     </div>
   );
 }
