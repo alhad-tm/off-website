@@ -10,9 +10,9 @@ const About = () => {
       <div className={css.aboutmainone}>
         <div className={css.first}>
           {" "}
-          <span>Discover everything you need to know about our company</span>
+          <span>Discover everything you need to <br /> know about our company</span>
         </div>
-        <div className={css.second}>"Invicious"</div>
+        {/* <div className={css.second}>"Invicious"</div> */}
         <div className={css.third}>
           Our vision and mission to the amazing team behind our success. Get to
           know our work culture, values, and what drives us to innovate and
@@ -85,7 +85,7 @@ const About = () => {
         </div>
       </div>
 
-     <div className={css.aboutmainthree}  id="team"  >
+     <div className={css.aboutmainthree}  id="some"  >
         <h2>"Driven by innovation and collaboration"</h2>
         <h3>Meet the invicious team</h3>
         <div className={css.boxmain}>

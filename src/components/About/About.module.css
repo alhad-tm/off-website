@@ -21,18 +21,14 @@
 }
 
 .first {
-  font-family: Nunito;
-  font-size: 31px;
-  font-weight: 900;
-  line-height: 49px;
+  font-family:  Helvetica;
+  font-size: 47px;
+  font-weight: 600;
+  line-height: 64px;
   letter-spacing: 0em;
   text-align: center;
-  font-family: Nunito;
-  font-weight: 800;
-  line-height: 49px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #b3b3b3;
+  color: #FFFFFF;
+  width: 100%;
 }
 .second {
   font-weight: 800;
@@ -247,6 +243,7 @@ justify-content: center;
   }
   .first {
     font-size: 17px;
+   line-height:32px;
   }
   .second {
     font-size: 37px;
@@ -370,5 +367,8 @@ justify-content: center;
   .openingsbutton {
     padding: 5px 5px;
     font-size: 7px;
+  }
+  .scroll{
+    margin-top: 5rem;
   }
 }

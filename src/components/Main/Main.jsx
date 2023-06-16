@@ -20,14 +20,14 @@ const Main = () => {
     <div className={css.container}>
       <div className={css.top}>
         <div className={css.first}>
-          {" "}
-          <span>Powering The Digital Revolution</span>
+         
+          <span className={css.firsts}>Powering The Digital Revolution</span>
         </div>
-        <div className={css.second}>
+        {/* <div className={css.second}>
           {" "}
-          {/* <b>"Invicious"</b> */}
+          <b>"Invicious"</b>
           <img className={css.log} src={Log} alt="" />
-        </div>
+        </div>  */}
         <div className={css.third}>
           Invicious is committed to creating innovative solutions that redefine
           the digital landscape.Want to learn more about our innovative products?
