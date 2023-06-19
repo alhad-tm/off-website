@@ -18,6 +18,7 @@ import Terms from "./components/Terms/Terms";
 import Privacy from "./components/Privacy/Privacy";
 import Cookie from "./components/Cookie/Cookie";
 import ContactForm from "./components/ContactForm/ContactForm";
+import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 // import Nav from "./components/Nav/Nav";
 // import { Container, Nav, Navbar, Row, Col, NavDropdown } from 'react-bootstrap';
@@ -49,6 +50,7 @@ function App() {
           <Route path="/terms" element={<Terms/>}/>  
           <Route path="/privacy" element={<Privacy/>}/>  
           <Route path="/cookie" element={<Cookie/>}/>   
+          <Route path="*" exact element={<PageNotFound/>} />
         </Routes>
 
         <Footer />  
