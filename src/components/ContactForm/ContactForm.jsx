@@ -65,7 +65,7 @@ const Submit=async(e)=>{
           required  
         />
 
-        {/* <label htmlFor="organisationType">Type of Organisation</label>
+        <label htmlFor="organisationType">Type of Organisation</label>
         <select className={css.inputcontact}
           id="organisationType"
           value={organisationType}
@@ -98,7 +98,7 @@ const Submit=async(e)=>{
           value={phoneNumber} 
           onChange={(e)=>{setPhoneNumber(e.target.value)}}
           required
-        /> */}
+        />
 
         <button  type="submit" value="submit" onClick={Submit} className={css.sendButton}>
           Submit

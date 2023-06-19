@@ -76,7 +76,7 @@ nav .navbar .links li .arrow{
   line-height: 70px;
   text-align: center;
   display: inline-block;
-  color: #fff;
+  color: #B3B3B3;
   transition: all 0.3s ease;
 }
 nav .navbar .links li .sub-menu{
@@ -204,7 +204,11 @@ nav .navbar .links li:hover .js-sub-menu{
 @media (max-width:800px){
   .logim{
     height: 50px;
-    width: 50px;
+    width: 100px;
+  }
+  .openimage{
+    width: 100px;
+    height: 100px;
   }
   nav{
     /* position: relative; */
@@ -217,7 +221,9 @@ nav .navbar .links li:hover .js-sub-menu{
     top: 0;
     left: -100%;
     display: block;
-    max-width: 270px;
+    /* max-width: 270px; */
+    max-width: 100%;
+    min-height: 100%;
     width: 100%;
     background:  #000000;
     line-height: 40px;
@@ -308,10 +314,15 @@ nav .navbar .links li .sub-menu li{
 @media (max-width:370px){
   nav .navbar .nav-links{
   max-width: 100%;
+  min-height: 100%;
 } 
 .logim{
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 100px;
+}
+.openimage{
+  width: 100px;
+  height: 100px;
 }
 /* .input-box{
   height: 100%;

@@ -235,6 +235,7 @@ justify-content: center;
     gap: 1rem;
     padding: 1rem;
     margin-bottom: 2rem;
+    height: 300px;
   }
   .boxmain,
   .boxsub {
@@ -368,7 +369,7 @@ justify-content: center;
     padding: 5px 5px;
     font-size: 7px;
   }
-  .scroll{
+  /* .scroll{
     margin-top: 5rem;
-  }
+  } */
 }
