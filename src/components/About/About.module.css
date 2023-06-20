@@ -54,7 +54,8 @@
   margin-top: 41px;
 }
 .aboutmaintwo {
-  background-image: url("E:\Invicious\invicious website\invicious\src\assets\Patterns.png");
+  /* background-image: url("E:\Invicious\invicious website\invicious\src\assets\Patterns.png"); */
+  background-image: url(/src/assets/Patterns.png);
 }
 .boxmain {
   display: flex;

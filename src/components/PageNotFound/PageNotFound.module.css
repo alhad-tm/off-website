@@ -5,7 +5,8 @@
     background-color: black;
     color: rgb(255, 255, 255);
     z-index: 1003;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
+    margin-top: -17rem;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -16,6 +17,8 @@
 .error{
     height: 250px;
     width: 250px;
+    /* margin-top: 5rem; */
+    margin-top: 12rem;
 }
 .btohome{
    color: #fff;
@@ -31,5 +34,7 @@
     .error{
         height: 150px;
         width: 150px;
+        margin-top: 12rem;
+        
     }
 }
